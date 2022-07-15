@@ -38,7 +38,7 @@ print("\n")
 # selects only the FirstName, LastName, and EmailAddress columns from the table contacts
 crsr.execute('''SELECT FirstName, LastName, EmailAddress FROM contacts''')
 
-# updates the contact's mail and phone number whose ID is 4
+# updates the contact's email and phone number whose ID is 4
 crsr.execute('''UPDATE contacts SET EmailAddress = "notrick@gmail.com", PhoneNumber = 6965558008 WHERE ContactID = 4''')
 
 # deletes the last contact that was entered, which has an ID of 5
